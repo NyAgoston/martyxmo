@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Márti – Angol Magántanár ✨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Particle canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Floating decorative blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">✨ Márti</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü megnyitása">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link">Főoldal</a></li>
+        <li><a href="#about" class="nav-link">Rólam</a></li>
+        <li><a href="#services" class="nav-link">Szolgáltatások</a></li>
+        <li><a href="#why" class="nav-link">Miért én?</a></li>
+        <li><a href="#contact" class="nav-link cta-nav">Kapcsolat 💌</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="hero-badge">🌸 Üdvözöllek!</div>
+        <h1 class="hero-title">
+          Szia, én vagyok<br />
+          <span class="hero-name gradient-text">Márti</span>
+        </h1>
+        <p class="hero-subtitle typewriter" id="typewriter"></p>
+        <div class="hero-emojis" aria-hidden="true">
+          <span class="float-emoji e1">📚</span>
+          <span class="float-emoji e2">💬</span>
+          <span class="float-emoji e3">⭐</span>
+          <span class="float-emoji e4">🌟</span>
+          <span class="float-emoji e5">✏️</span>
+          <span class="float-emoji e6">🎀</span>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary">Foglalj időpontot 🌸</a>
+          <a href="#about" class="btn btn-ghost">Ismerj meg ↓</a>
+        </div>
+
+      </div>
+      <div class="hero-image-wrap">
+        <!-- animated gradient border frame -->
+        <div class="pic-frame">
+          <div class="pic-frame-inner">
+            <img src="profile.png" alt="Márti profilkép" class="profile-img" />
+          </div>
+        </div>
+        <div class="profile-glow"></div>
+        <!-- decorative floating emojis (outside frame, not covering photo) -->
+        <span class="deco-emoji de-1">&#x1F338;</span>
+        <span class="deco-emoji de-2">⭐</span>
+        <span class="deco-emoji de-3">💖</span>
+        <span class="deco-emoji de-4">🎀</span>
+        <!-- badges below on mobile, overlapping corners on desktop -->
+        <div class="profile-badge-1 badge-float">🏆 Diplomás tanár</div>
+        <div class="profile-badge-2 badge-float">💯 Online & személyes</div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="section-inner">
+        <div class="section-tag">🌷 Rólam</div>
+        <h2 class="section-title">Kicsoda <span class="gradient-text">Márti</span>?</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Szia! 👋 Márti vagyok, friss diplomás angoltanár. Hiszek abban,
+              hogy az angol tanulás nemcsak hasznos, hanem <strong>szórakoztató is lehet</strong> –
+              és ezt bizonyítom is minden egyes órámon.
+            </p>
+            <p>
+              Legyen szó általános iskolásokról, középiskolásokról, érettségire vagy
+              nyelvvizsgára készülőkről, vagy akár felnőttekről, akik munkájukhoz szeretnék
+              fejleszteni a nyelvtudásukat – <strong>mindenki számára személyre szabott</strong>
+              tananyaggal dolgozom. 🎯
+            </p>
+            <p>
+              Oktatási módszerem modern, játékos és eredményes. Nem kell félned a hibáktól –
+              nálam biztonságos, támogató környezetben sajátíthatod el az angol nyelvet. 💕
+            </p>
+            <div class="about-tags">
+              <span class="tag">🎓 Diplomás tanár</span>
+              <span class="tag">🗣️ Kommunikatív módszer</span>
+              <span class="tag">📱 Online & személyes</span>
+              <span class="tag">📝 Érettségi felkészítés</span>
+              <span class="tag">🏅 Nyelvvizsga prep</span>
+              <span class="tag">👩‍💼 Korrepetálás</span>
+            </div>
+          </div>
+          <div class="about-cards reveal">
+            <div class="about-card glass-card">
+              <div class="about-card-icon">🎓</div>
+              <h3>Végzettség</h3>
+              <p>Diplomás angol szakos tanár, Debrecen BTK</p>
+            </div>
+            <div class="about-card glass-card">
+              <div class="about-card-icon">📍</div>
+              <h3>Helyszín</h3>
+              <p>Miskolc & Online – bárhonnan elérhető vagyok!</p>
+            </div>
+            <div class="about-card glass-card">
+              <div class="about-card-icon">⏰</div>
+              <h3>Rugalmas időbeosztás</h3>
+              <p>Hétköznap 15:00 után</p>
+            </div>
+            <div class="about-card glass-card">
+              <div class="about-card-icon">💖</div>
+              <h3>Személyes odafigyelés</h3>
+              <p>Kis csoportok és egyéni foglalkozások</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+      <div class="section-inner">
+        <div class="section-tag">✨ Kínálat</div>
+        <h2 class="section-title">Mit <span class="gradient-text">kínálok</span>?</h2>
+        <p class="section-subtitle">
+          Minden tanuló más – ezért minden óra személyre szabott és célorientált 🎯
+        </p>
+        <div class="services-grid">
+          <div class="service-card glass-card reveal">
+            <div class="service-icon">👧</div>
+            <h3>Általános & középiskolás felkészítés</h3>
+            <p>
+              Iskolai anyag feldolgozása, dolgozatokra való felkészülés, szókincs és grammatika
+              játékos elsajátítása.
+            </p>
+            <ul class="service-list">
+              <li>✅ Általános iskola 1–8. osztály</li>
+              <li>✅ Középiskola 9–12. osztály</li>
+              <li>✅ Iskolai anyaghoz igazodva</li>
+            </ul>
+          </div>
+          <div class="service-card glass-card reveal featured-card">
+            <div class="featured-label">🌟 Legnépszerűbb</div>
+            <div class="service-icon">📋</div>
+            <h3>Érettségi & Nyelvvizsga előkészítő</h3>
+            <p>
+              Célzott, hatékony felkészítés közép- vagy emelt szintű érettségire, B2/C1
+              vagy ECL/Cambridge vizsgára.
+            </p>
+            <ul class="service-list">
+              <li>✅ Emelt szintű érettségi</li>
+              <li>✅ B2 / C1 nyelvvizsga</li>
+              <li>✅ Valódi vizsgafeladatok</li>
+              <li>✅ Szimulált vizsgák</li>
+            </ul>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon">💼</div>
+            <h3>Üzleti & Felnőtt angol</h3>
+            <p>
+              Munkahelyi kommunikáció, prezentációk, e-mailek, meetingek – mind angolul,
+              magabiztosan.
+            </p>
+            <ul class="service-list">
+              <li>✅ Business English</li>
+              <li>✅ Szakmai szókincs</li>
+              <li>✅ Konverzáció & prezentáció</li>
+            </ul>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon">🌍</div>
+            <h3>Társalgási angol</h3>
+            <p>
+              Folyékony, magabiztos beszéd fejlesztése anyanyelvi szintű kiejtéssel és természetes
+              kifejezésekkel.
+            </p>
+            <ul class="service-list">
+              <li>✅ Kiejtésfejlesztés</li>
+              <li>✅ Idiómák & kifejezések</li>
+              <li>✅ Valós élethelyzetek</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY ME ===== -->
+    <section class="section why" id="why">
+      <div class="section-inner">
+        <div class="section-tag">💕 Miért én?</div>
+        <h2 class="section-title">Miért válassz <span class="gradient-text">engem</span>?</h2>
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="why-icon">🎨</div>
+            <h3>Kreatív módszer</h3>
+            <p>Filmek, zenék, játékok és valós élethelyzetek segítségével tanulunk – nem únod meg!</p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">💡</div>
+            <h3>Személyre szabott</h3>
+            <p>Mindenki más tempóban és stílusban tanul – az óráim hozzád igazodnak.</p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">📈</div>
+            <h3>Mért eredmények</h3>
+            <p>Rendszeres visszajelzés, haladás nyomon követése, átlátható fejlődés.</p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-icon">🤝</div>
+            <h3>Biztonságos légkör</h3>
+            <p>Nálam nem kell félni a hibáktól – a hibák a tanulás legfontosabb részei!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <div class="section-inner">
+        <div class="section-tag">💌 Kapcsolat</div>
+        <h2 class="section-title">Írj <span class="gradient-text">nekem</span>!</h2>
+        <p class="section-subtitle">
+          Vedd fel velem a kapcsolatot és beszéljük meg, hogyan
+          tudok segíteni 🌷
+        </p>
+        <div class="contact-wrap">
+          <div class="contact-info reveal">
+            <div class="contact-item glass-card">
+              <div class="contact-icon">📧</div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:martakatalin2@gmail.com">martakatalin2@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item glass-card">
+              <div class="contact-icon">📱</div>
+              <div>
+                <strong>Telefon / WhatsApp</strong>
+                <a href="tel:+36202455066">+36 20 245 5066</a>
+              </div>
+            </div>
+            <div class="contact-item glass-card">
+              <div class="contact-icon contact-icon-fb">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+                  <path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Facebook</strong>
+                <a href="https://www.facebook.com/marti.majoros.3" target="_blank">@marti.majoros.3</a>
+              </div>
+            </div>
+            <div class="contact-item glass-card">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <strong>Elérhetőség</strong>
+                <span>H–P: 14:00–18:00 | Szo: 12:00–16:00</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form glass-card reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Neved 🌸</label>
+              <input type="text" id="name" name="name" placeholder="pl. Kovács Anna" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail cím 📧</label>
+              <input type="email" id="email" name="email" placeholder="pl. anna@gmail.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Téma 📚</label>
+              <select id="subject" name="subject">
+                <option value="">Válassz témát…</option>
+                <option>Általános / középiskolás felkészítés</option>
+                <option>Érettségi előkészítő</option>
+                <option>Nyelvvizsga előkészítő</option>
+                <option>Üzleti angol</option>
+                <option>Társalgási angol</option>
+                <option>Egyéb</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Üzeneted 💬</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Mesélj magadról, céljaidról, kérdéseidről…"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Elküldöm 💌
+            </button>
+            <p class="form-note">Általában 24 órán belül válaszolok! 🌟</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">✨ Márti – Angol Magántanár</div>
+        <p class="footer-tagline">Mert az angol tanulás lehet szórakoztató is! 🌸</p>
+        <div class="footer-links">
+          <a href="#hero">Főoldal</a>
+          <a href="#about">Rólam</a>
+          <a href="#services">Szolgáltatások</a>
+          <a href="#contact">Kapcsolat</a>
+        </div>
+        <p class="footer-copy">© 2026 Márti. Minden jog fenntartva. 💕</p>
+        <p class="footer-credit">
+          Tervezte &amp; fejlesztette 💻
+          <a href="https://github.com/NyAgoston" target="_blank" rel="noopener" class="credit-link">
+            Nyeste Ágoston
+          </a>
+          &middot;
+          <a href="mailto:xpnyeste@gmail.com" class="credit-link">xpnyeste@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
